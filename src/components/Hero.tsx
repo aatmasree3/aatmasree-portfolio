@@ -1,14 +1,13 @@
-
 import { Linkedin, Github, Mail, Phone } from "lucide-react";
 
 const Hero = () => (
   <section className="w-full min-h-[60vh] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 py-16 md:py-24 max-w-[1100px] mx-auto animate-fade-in-up">
     <div className="flex-1 flex flex-col gap-4 items-start">
-      <p className="text-xl md:text-2xl text-accent font-semibold tracking-wide px-2 animate-fade-in-up">Hi, I'm</p>
-      <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-2 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-fade-in-up">
+      <p className="text-xl md:text-2xl text-accent font-semibold tracking-wide px-2 font-sans animate-fade-in-up">Hi, I'm</p>
+      <h1 className="font-heading text-5xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-fade-in-up">
         Aatmasree Srinivas
       </h1>
-      <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-6 animate-fade-in-up">
+      <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-6 font-sans animate-fade-in-up">
         Engineering student, developer, and tech enthusiast—passionate about building scalable applications, solving real-world problems, and learning in collaborative environments.
       </p>
       <div className="flex flex-wrap gap-4 items-center">
@@ -48,7 +47,7 @@ const Hero = () => (
         </a>
       </div>
     </div>
-    <div className="flex-shrink-0 rounded-2xl shadow-lg border-4 border-accent/60 overflow-hidden w-56 h-72 bg-card flex items-center justify-center animate-fade-in-up">
+    <div className="flex-shrink-0 rounded-2xl shadow-lg border-4 border-primary/70 overflow-hidden w-56 h-72 bg-card flex items-center justify-center animate-fade-in-up">
       <img
         src="/lovable-uploads/f8b78da8-6ee5-46c6-bc4e-ee251ae8102d.png"
         alt="Aatmasree Srinivas Resume Preview"

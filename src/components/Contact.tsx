@@ -43,13 +43,13 @@ const Contact = () => {
 
   return (
     <div className="max-w-lg mx-auto px-4 py-8 animate-fade-in-up">
-      <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Contact Me</h2>
-      <p className="text-foreground mb-6">Have a question, opportunity, or just want to connect? Fill out the form below or email me directly at <a href="mailto:nnm22is003@nmit.in" className="text-primary underline">nnm22is003@nmit.in</a>.</p>
+      <h2 className="text-3xl font-heading font-bold text-primary mb-4">Contact Me</h2>
+      <p className="text-foreground mb-6 font-sans">Have a question, opportunity, or just want to connect? Fill out the form below or email me directly at <a href="mailto:nnm22is003@nmit.in" className="text-primary underline">nnm22is003@nmit.in</a>.</p>
       <form ref={form} onSubmit={handleSubmit} className="bg-card rounded-xl p-6 border border-border shadow flex flex-col gap-4">
         <div>
-          <label className="block mb-1 font-semibold text-secondary" htmlFor="name">Your Name</label>
+          <label className="block mb-1 font-semibold text-secondary font-heading" htmlFor="name">Your Name</label>
           <input
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground font-sans"
             type="text"
             name="name"
             id="name"
@@ -57,9 +57,9 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block mb-1 font-semibold text-secondary" htmlFor="email">Your Email</label>
+          <label className="block mb-1 font-semibold text-secondary font-heading" htmlFor="email">Your Email</label>
           <input
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground font-sans"
             type="email"
             name="email"
             id="email"
@@ -67,9 +67,9 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block mb-1 font-semibold text-secondary" htmlFor="message">Message</label>
+          <label className="block mb-1 font-semibold text-secondary font-heading" htmlFor="message">Message</label>
           <textarea
-            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+            className="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground font-sans"
             name="message"
             id="message"
             rows={4}
@@ -78,7 +78,7 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="bg-primary text-white font-bold rounded py-2 px-6 mt-2 hover:bg-secondary transition disabled:opacity-60"
+          className="bg-primary text-white font-bold rounded py-2 px-6 mt-2 hover:bg-secondary transition disabled:opacity-60 font-heading"
           disabled={loading}
         >
           {loading ? "Sending..." : (<span className="flex items-center justify-center gap-2"><Mail className="w-5 h-5" /> Send Message</span>)}
@@ -86,7 +86,7 @@ const Contact = () => {
         {sent && <div className="text-success font-semibold mt-2 text-green-500">Thank you! Your message was sent.</div>}
         {error && <div className="text-red-500 mt-2">{error}</div>}
       </form>
-      <div className="mt-5 text-xs text-muted-foreground">
+      <div className="mt-5 text-xs text-muted-foreground font-sans">
         To activate email form: <b>Sign up at <a href="https://www.emailjs.com/" className="underline text-primary" target="_blank">EmailJS</a></b>, create a service and template, then <b>replace the SERVICE_ID, TEMPLATE_ID, and USER_ID</b> in the code above with your own. <b>Never publish your real keys!</b>
       </div>
     </div>

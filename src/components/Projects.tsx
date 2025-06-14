@@ -24,13 +24,13 @@ const projects = [
 
 const Projects = () => (
   <div className="max-w-4xl mx-auto px-4 py-2 animate-fade-in-up">
-    <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Projects</h2>
+    <h2 className="text-3xl font-heading font-bold text-primary mb-4">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {projects.map((project) => (
         <div key={project.title} className="bg-card rounded-xl border border-border shadow-xl p-6 hover:shadow-2xl transition duration-300">
-          <h3 className="text-xl font-bold text-secondary mb-2">{project.title}</h3>
-          <p className="text-md text-foreground mb-2">{project.description}</p>
-          <ul className="pl-4 list-disc text-muted-foreground">
+          <h3 className="text-xl font-bold text-secondary mb-2 font-heading">{project.title}</h3>
+          <p className="text-md text-foreground mb-2 font-sans">{project.description}</p>
+          <ul className="pl-4 list-disc text-muted-foreground font-sans">
             {project.highlights.map((hl, i) => (
               <li key={i}>{hl}</li>
             ))}

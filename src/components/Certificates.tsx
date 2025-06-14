@@ -22,7 +22,7 @@ const certificates = [
 
 const Certificates = () => (
   <div className="max-w-3xl mx-auto px-4 py-2 animate-fade-in-up">
-    <h2 className="text-3xl font-playfair font-bold text-primary mb-4">Certificates</h2>
+    <h2 className="text-3xl font-heading font-bold text-primary mb-4">Certificates</h2>
     <ul className="space-y-4">
       {certificates.map((c) => (
         <li
@@ -30,8 +30,8 @@ const Certificates = () => (
           className="bg-card border border-border rounded-lg shadow p-4 flex flex-col gap-1"
         >
           <div className="flex items-center justify-between gap-2">
-            <span className="font-semibold text-secondary text-lg">{c.name}</span>
-            <span className="text-sm text-muted-foreground">{c.issuer} &middot; {c.year}</span>
+            <span className="font-semibold text-secondary text-lg font-heading">{c.name}</span>
+            <span className="text-sm text-muted-foreground font-sans">{c.issuer} &middot; {c.year}</span>
           </div>
         </li>
       ))}
