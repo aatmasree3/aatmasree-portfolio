@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -26,17 +25,17 @@ const navLinks = [
 ];
 
 const Index = () => (
-  <div className="min-h-screen bg-background font-inter flex flex-col">
+  <div className="min-h-screen bg-background font-body flex flex-col">
     {/* Sticky Navbar */}
-    <header className="sticky top-0 z-30 w-full backdrop-blur bg-background/90 border-b border-border">
-      <nav className="flex items-center justify-between mx-auto max-w-[1200px] px-8 py-4">
-        <span className="text-2xl font-playfair font-semibold text-primary tracking-tight">Aatmasree Srinivas</span>
-        <ul className="hidden md:flex gap-5 font-semibold">
+    <header className="sticky top-0 z-30 w-full bg-background/95 border-b border-border">
+      <nav className="flex items-center justify-between mx-auto max-w-[1200px] px-6 py-4">
+        <span className="text-2xl font-heading font-bold text-primary tracking-tight">Aatmasree Srinivas</span>
+        <ul className="hidden md:flex gap-6 font-heading font-semibold">
           {navLinks.map((item) => (
             <li key={item.href}>
               <a
                 href={item.href}
-                className="transition text-foreground hover:text-primary relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
+                className="transition-colors text-foreground hover:text-primary relative after:content-[''] after:w-0 after:h-[2px] after:bg-primary after:absolute after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 {item.label}
               </a>
@@ -57,7 +56,7 @@ const Index = () => (
         </div>
       </nav>
     </header>
-    <main className="flex-1 flex flex-col items-center justify-start w-full overflow-x-hidden">
+    <main className="flex-1 flex flex-col items-center w-full overflow-x-hidden">
       <Hero />
       <SectionDivider />
       <section id="about"><About /></section>
@@ -79,7 +78,7 @@ const Index = () => (
       <section id="contact"><Contact /></section>
     </main>
     {/* Footer */}
-    <footer className="w-full py-8 border-t border-border bg-background/90 text-center text-muted-foreground text-sm">
+    <footer className="w-full py-8 border-t border-border bg-background text-center text-muted text-[15px] font-body font-medium">
       © {new Date().getFullYear()} Aatmasree Srinivas. All rights reserved.
     </footer>
   </div>

@@ -1,4 +1,3 @@
-
 const blogs = [
   {
     title: "How I Built My First Chatbot",
@@ -22,14 +21,14 @@ const Blogs = () => (
         <a
           key={i}
           href={b.url}
-          className="block bg-card rounded-xl p-6 border border-border shadow hover:shadow-xl transition group"
+          className="block card rounded-xl p-6 hover:shadow-lg transition-shadow duration-300 group"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="text-secondary font-semibold text-xl font-heading">{b.title}</div>
-          <div className="text-muted-foreground text-sm mb-1 font-sans">{b.date}</div>
-          <div className="text-foreground font-sans">{b.excerpt}</div>
-          <span className="inline-block mt-2 text-primary group-hover:underline">Read More →</span>
+          <div className="font-heading font-semibold text-secondary text-xl">{b.title}</div>
+          <div className="text-muted text-sm mb-1 font-body">{b.date}</div>
+          <div className="text-foreground font-body">{b.excerpt}</div>
+          <span className="inline-block mt-2 text-primary group-hover:underline transition-colors duration-200">Read More →</span>
         </a>
       ))}
     </div>

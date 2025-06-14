@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,37 +19,37 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				heading: ['Lora', 'serif'], // For headings
-				sans: ['Inter', 'system-ui', 'sans-serif'], // For body
+				heading: ['Poppins', 'sans-serif'],
+				body: ['Roboto', 'Open Sans', 'sans-serif'],
 			},
 			colors: {
-				border: '#DDDDE6',
-				input: '#E3E6EC',
-				ring: '#CBBEDA',
-				background: '#18181B', // A rich dark, not pitch black
-				foreground: '#EFEDEF',
+				background: "#f9f9f9",
+				foreground: "#1f2937", // gray-800
 				primary: {
-					DEFAULT: '#7A48FF', // Modern violet
-					foreground: '#F2F7FA'
+					DEFAULT: "#4f46e5", // Indigo-600
+					hover: "#4338ca",   // Indigo-700
+					foreground: "#f9f9f9"
 				},
 				secondary: {
-					DEFAULT: '#E16036', // Soft orange
-					foreground: '#fff6ea'
+					DEFAULT: "#6366f1", // Indigo-500
+					foreground: "#f9f9f9"
 				},
 				accent: {
-					DEFAULT: '#36c6e1', // Aqua
-					foreground: '#1c2241'
+					DEFAULT: "#6366f1", // Indigo-500
+					foreground: "#f9f9f9"
 				},
-				success: '#34D399',
-				card: { DEFAULT: '#232338', foreground: '#F2F7FA' },
-				muted: { DEFAULT: '#34344a', foreground: '#C4BEE1' },
-				destructive: { DEFAULT: '#e56464', foreground: '#fcfbfb' }
+				muted: "#e5e7eb", // gray-200
+				card: { DEFAULT: "#fff", foreground: "#1f2937" },
+				border: "#e5e7eb"
 			},
 			borderRadius: {
-				lg: '1rem',
-				md: '0.85rem',
-				sm: '0.7rem'
+				lg: '0.75rem',
+				md: '0.5rem',
+				sm: '0.375rem'
 			},
+			transitionProperty: {
+				colors: 'background-color, border-color, color, fill, stroke',
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

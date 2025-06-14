@@ -1,4 +1,3 @@
-
 const projects = [
   {
     title: "ChatterBox",
@@ -27,10 +26,10 @@ const Projects = () => (
     <h2 className="text-3xl font-heading font-bold text-primary mb-4">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {projects.map((project) => (
-        <div key={project.title} className="bg-card rounded-xl border border-border shadow-xl p-6 hover:shadow-2xl transition duration-300">
-          <h3 className="text-xl font-bold text-secondary mb-2 font-heading">{project.title}</h3>
-          <p className="text-md text-foreground mb-2 font-sans">{project.description}</p>
-          <ul className="pl-4 list-disc text-muted-foreground font-sans">
+        <div key={project.title} className="card rounded-xl p-6 hover:shadow-2xl transition-shadow duration-300">
+          <h3 className="font-heading font-bold text-secondary text-xl mb-2">{project.title}</h3>
+          <p className="text-md text-foreground mb-2 font-body">{project.description}</p>
+          <ul className="pl-4 list-disc text-muted font-body">
             {project.highlights.map((hl, i) => (
               <li key={i}>{hl}</li>
             ))}

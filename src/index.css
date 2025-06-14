@@ -1,87 +1,66 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
 @layer base {
   :root {
-    --background: 250 15% 10%;
-    --foreground: 245 33% 98%;
+    --background: 240 100% 98%; /* #f9f9f9 */
+    --foreground: 220 24% 18%;  /* #1f2937 */
 
-    --card: 245 33% 12%;
-    --card-foreground: 245 33% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 24% 18%;
 
-    --popover: 250 15% 10%;
-    --popover-foreground: 245 33% 98%;
+    --primary: 242 81% 60%; /* #4f46e5 */
+    --primary-foreground: 240 100% 98%;
+    --primary-hover: 244 74% 45%; /* #4338ca */
 
-    --primary: 259 96% 64%;
-    --primary-foreground: 245 33% 98%;
+    --secondary: 239 85% 64%; /* #6366f1 */
+    --secondary-foreground: 240 100% 98%;
 
-    --secondary: 17 73% 57%;
-    --secondary-foreground: 20 90% 98%;
+    --accent: 239 85% 64%;
+    --accent-foreground: 240 100% 98%;
 
-    --accent: 190 67% 56%;
-    --accent-foreground: 244 37% 18%;
-
-    --success: 156 73% 52%;
-
-    --border: 248 13% 78%;
-    --input: 249 14% 91%;
-    --ring: 263 26% 65%;
-
-    --radius: 0.95rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 245 21% 9%;
-    --foreground: 235 44% 95%;
-
-    --card: 245 21% 14%;
-    --card-foreground: 235 44% 95%;
-
-    --popover: 245 21% 9%;
-    --popover-foreground: 235 44% 95%;
-
-    --primary: 259 96% 64%;
-    --primary-foreground: 245 33% 98%;
-
-    --secondary: 17 73% 57%;
-    --secondary-foreground: 20 90% 98%;
-
-    --accent: 190 67% 56%;
-    --accent-foreground: 244 37% 18%;
+    --muted: 220 14% 96%; /* #e5e7eb */
+    --border: 220 14% 96%;
 
     --success: 156 73% 52%;
 
-    --border: 248 13% 49%;
-    --input: 249 10% 25%;
-    --ring: 263 26% 90%;
+    --radius: 0.75rem;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
 
+  html {
+    font-family: 'Roboto', 'Open Sans', 'sans-serif';
+    background-color: #f9f9f9;
+    color: #1f2937;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-family: 'Roboto', 'Open Sans', 'sans-serif';
+    font-size: 1.05rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', 'Roboto', 'Open Sans', sans-serif;
+    color: #1f2937;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-heading font-semibold rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary hover:bg-primary-hover;
+  }
+  .link {
+    @apply text-primary transition-colors duration-200 underline-offset-4 hover:underline hover:text-primary-hover focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+  .card {
+    @apply bg-card border border-border rounded-lg shadow-sm;
   }
 }

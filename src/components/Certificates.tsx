@@ -1,4 +1,3 @@
-
 const certificates = [
   {
     name: "Introduction to Python",
@@ -27,11 +26,11 @@ const Certificates = () => (
       {certificates.map((c) => (
         <li
           key={c.name}
-          className="bg-card border border-border rounded-lg shadow p-4 flex flex-col gap-1"
+          className="card rounded-lg shadow p-4 flex flex-col gap-1 hover:shadow-lg transition-shadow duration-200"
         >
           <div className="flex items-center justify-between gap-2">
-            <span className="font-semibold text-secondary text-lg font-heading">{c.name}</span>
-            <span className="text-sm text-muted-foreground font-sans">{c.issuer} &middot; {c.year}</span>
+            <span className="font-heading font-semibold text-secondary text-lg">{c.name}</span>
+            <span className="text-sm text-muted font-body">{c.issuer} &middot; {c.year}</span>
           </div>
         </li>
       ))}
