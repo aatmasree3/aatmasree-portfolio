@@ -1,0 +1,62 @@
+
+import { Linkedin, Github, Mail, Phone } from "lucide-react";
+
+const Hero = () => (
+  <section className="w-full min-h-[60vh] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 py-16 md:py-24 max-w-[1100px] mx-auto animate-fade-in-up">
+    <div className="flex-1 flex flex-col gap-4 items-start">
+      <p className="text-xl md:text-2xl text-accent font-semibold tracking-wide px-2 animate-fade-in-up">Hi, I'm</p>
+      <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-2 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent animate-fade-in-up">
+        Aatmasree Srinivas
+      </h1>
+      <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-6 animate-fade-in-up">
+        Engineering student, developer, and tech enthusiast—passionate about building scalable applications, solving real-world problems, and learning in collaborative environments.
+      </p>
+      <div className="flex flex-wrap gap-4 items-center">
+        <a
+          href="mailto:nnm22is003@nmit.in"
+          className="inline-flex items-center gap-2 text-primary hover:underline"
+          title="Email"
+        >
+          <Mail className="w-5 h-5" /> nnm22is003@nmit.in
+        </a>
+        <span className="text-muted-foreground hidden md:inline">|</span>
+        <a
+          href="tel:+918127145298"
+          className="inline-flex items-center gap-2 text-primary hover:underline"
+          title="Phone"
+        >
+          <Phone className="w-5 h-5" /> +91 8127145298
+        </a>
+        <span className="text-muted-foreground hidden md:inline">|</span>
+        <a
+          href="https://www.linkedin.com/in/aatmasree-srinivas/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-primary hover:underline"
+          title="LinkedIn"
+        >
+          <Linkedin className="w-5 h-5" /> LinkedIn
+        </a>
+        <a
+          href="https://github.com/nnm22is003"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-primary hover:underline"
+          title="GitHub"
+        >
+          <Github className="w-5 h-5" /> GitHub
+        </a>
+      </div>
+    </div>
+    <div className="flex-shrink-0 rounded-2xl shadow-lg border-4 border-accent/60 overflow-hidden w-56 h-72 bg-card flex items-center justify-center animate-fade-in-up">
+      <img
+        src="/lovable-uploads/f8b78da8-6ee5-46c6-bc4e-ee251ae8102d.png"
+        alt="Aatmasree Srinivas Resume Preview"
+        className="object-cover w-full h-full rounded-xl"
+        draggable={false}
+      />
+    </div>
+  </section>
+);
+
+export default Hero;
