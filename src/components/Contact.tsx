@@ -1,4 +1,3 @@
-
 import { useRef, useState } from "react";
 import { Mail, MessageCircle } from "lucide-react";
 
@@ -25,10 +24,10 @@ const Contact = () => {
     setError("");
     setSent(false);
 
-    //!! UPDATE THESE WITH YOUR EMAILJS SERVICE, TEMPLATE, AND USER KEYS !!
-    const SERVICE_ID = "YOUR_SERVICE_ID";
-    const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-    const USER_ID = "YOUR_PUBLIC_KEY";
+    // EmailJS credentials from user
+    const SERVICE_ID = "service_z0mnuwm";
+    const TEMPLATE_ID = "template_qg6g1rj";
+    const USER_ID = "wBdJ5FFyHk5ycI7-G";
 
     if (!SERVICE_ID || !TEMPLATE_ID || !USER_ID) {
       setLoading(false);
@@ -190,4 +189,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
