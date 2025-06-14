@@ -48,11 +48,11 @@ const Hero = () => (
         </a>
       </div>
     </div>
-    <div className="flex-shrink-0 rounded-2xl border-4 border-primary overflow-hidden w-56 h-72 bg-card flex items-center justify-center drop-shadow-lg">
+    <div className="flex-shrink-0 rounded-full border-4 border-primary overflow-hidden w-56 h-56 bg-card flex items-center justify-center drop-shadow-lg">
       <img
         src="https://i.postimg.cc/T3m8PzpG/AATMASREE-PHOTO.jpg"
         alt="Aatmasree Srinivas Photo"
-        className="object-cover w-full h-full rounded-xl"
+        className="object-cover w-full h-full rounded-full"
         draggable={false}
       />
     </div>
@@ -60,4 +60,3 @@ const Hero = () => (
 );
 
 export default Hero;
-
