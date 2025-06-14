@@ -47,7 +47,7 @@ const Hero = () => (
         </a>
       </div>
     </div>
-    <div className="flex-shrink-0 rounded-full border-4 border-primary overflow-hidden w-72 h-72 bg-card flex items-center justify-center drop-shadow-lg mt-6 md:mt-0 md:-ml-32">
+    <div className="flex-shrink-0 rounded-full border-4 border-primary overflow-hidden w-72 h-72 bg-card flex items-center justify-center drop-shadow-lg mt-6 md:mt-0 md:-ml-44">
       <img
         src="https://i.postimg.cc/T3m8PzpG/AATMASREE-PHOTO.jpg"
         alt="Aatmasree Srinivas Photo"
