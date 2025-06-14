@@ -15,7 +15,6 @@ const Hero = () => (
         items-center
         justify-center
         drop-shadow-lg
-        p-4
         mt-6
         md:mt-0
         md:absolute
