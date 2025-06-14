@@ -1,3 +1,4 @@
+
 import { Linkedin, Github, Mail, Phone } from "lucide-react";
 
 const Hero = () => (
@@ -49,8 +50,8 @@ const Hero = () => (
     </div>
     <div className="flex-shrink-0 rounded-2xl border-4 border-primary overflow-hidden w-56 h-72 bg-card flex items-center justify-center drop-shadow-lg">
       <img
-        src="/lovable-uploads/f8b78da8-6ee5-46c6-bc4e-ee251ae8102d.png"
-        alt="Aatmasree Srinivas Resume Preview"
+        src="https://i.postimg.cc/T3m8PzpG/AATMASREE-PHOTO.jpg"
+        alt="Aatmasree Srinivas Photo"
         className="object-cover w-full h-full rounded-xl"
         draggable={false}
       />
@@ -59,3 +60,4 @@ const Hero = () => (
 );
 
 export default Hero;
+

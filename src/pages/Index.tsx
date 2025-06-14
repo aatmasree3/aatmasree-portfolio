@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -5,7 +6,7 @@ import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Certificates from "@/components/Certificates";
 import Education from "@/components/Education";
-import Testimonials from "@/components/Testimonials";
+// Remove Testimonials import
 import Blogs from "@/components/Blogs";
 import Contact from "@/components/Contact";
 import SectionDivider from "@/components/SectionDivider";
@@ -19,7 +20,7 @@ const navLinks = [
   { label: "Experience", href: "#experience" },
   { label: "Certificates", href: "#certificates" },
   { label: "Education", href: "#education" },
-  { label: "Testimonials", href: "#testimonials" },
+  // Removed Testimonials nav link
   { label: "Blog", href: "#blogs" },
   { label: "Contact", href: "#contact" },
 ];
@@ -70,8 +71,7 @@ const Index = () => (
       <section id="certificates"><Certificates /></section>
       <SectionDivider />
       <section id="education"><Education /></section>
-      <SectionDivider />
-      <section id="testimonials"><Testimonials /></section>
+      {/* Removed Testimonials Section */}
       <SectionDivider />
       <section id="blogs"><Blogs /></section>
       <SectionDivider />
@@ -85,3 +85,4 @@ const Index = () => (
 );
 
 export default Index;
+
