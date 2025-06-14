@@ -1,3 +1,12 @@
+
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+  CardDescription,
+} from "./ui/card";
+
 const projects = [
   {
     title: "ChatterBox",
@@ -26,18 +35,27 @@ const Projects = () => (
     <h2 className="text-3xl font-heading font-bold text-primary mb-4">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {projects.map((project) => (
-        <div key={project.title} className="card rounded-xl p-6 hover:shadow-2xl transition-shadow duration-300">
-          <h3 className="font-heading font-bold text-secondary text-xl mb-2">{project.title}</h3>
-          <p className="text-md text-foreground mb-2 font-body">{project.description}</p>
-          <ul className="pl-4 list-disc text-muted font-body">
-            {project.highlights.map((hl, i) => (
-              <li key={i}>{hl}</li>
-            ))}
-          </ul>
-        </div>
+        <Card key={project.title} className="flex flex-col h-full justify-between min-h-[320px]">
+          <CardHeader>
+            <CardTitle className="text-secondary text-xl font-heading mb-2">
+              {project.title}
+            </CardTitle>
+            <CardDescription className="mb-2 text-foreground font-body">
+              {project.description}
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="flex flex-col justify-end pt-2">
+            <ul className="pl-4 list-disc text-muted font-body space-y-1">
+              {project.highlights.map((hl, i) => (
+                <li key={i}>{hl}</li>
+              ))}
+            </ul>
+          </CardContent>
+        </Card>
       ))}
     </div>
   </div>
 );
 
 export default Projects;
+
