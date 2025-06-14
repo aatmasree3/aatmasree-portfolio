@@ -4,7 +4,6 @@ import {
   CardHeader,
   CardTitle,
   CardContent,
-  CardDescription,
 } from "./ui/card";
 
 const projects = [
@@ -35,17 +34,17 @@ const Projects = () => (
     <h2 className="text-3xl font-heading font-bold text-primary mb-4">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {projects.map((project) => (
-        <Card key={project.title} className="flex flex-col h-full justify-between min-h-[320px]">
-          <CardHeader>
+        <Card key={project.title} className="flex flex-col h-full justify-between min-h-[350px] p-2 md:p-4 shadow-md">
+          <CardHeader className="pb-2">
             <CardTitle className="text-secondary text-xl font-heading mb-2">
               {project.title}
             </CardTitle>
-            <CardDescription className="mb-2 text-foreground font-body">
+            <p className="mb-3 text-foreground font-body text-[1.02rem] leading-relaxed">
               {project.description}
-            </CardDescription>
+            </p>
           </CardHeader>
-          <CardContent className="flex flex-col justify-end pt-2">
-            <ul className="pl-4 list-disc text-muted font-body space-y-1">
+          <CardContent className="flex flex-col justify-end pt-0">
+            <ul className="pl-4 list-disc text-[1rem] text-muted-foreground font-body space-y-1">
               {project.highlights.map((hl, i) => (
                 <li key={i}>{hl}</li>
               ))}
