@@ -3,36 +3,8 @@ import { Linkedin, Github, Mail, Phone } from "lucide-react";
 
 const Hero = () => (
   <section className="w-full min-h-[60vh] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 py-16 md:py-24 max-w-[1100px] mx-auto animate-fade-in-up relative">
-    {/* Image at far right for md+ screens, spaced from the right edge */}
-    <div
-      className="
-        flex-shrink-0
-        overflow-hidden
-        w-72
-        h-72
-        bg-card
-        flex
-        items-center
-        justify-center
-        drop-shadow-lg
-        mt-6
-        md:mt-0
-        md:absolute
-        md:right-8
-        md:top-1/2
-        md:-translate-y-1/2
-        z-10
-      "
-    >
-      <img
-        src="https://i.postimg.cc/T3m8PzpG/AATMASREE-PHOTO.jpg"
-        alt="Aatmasree Srinivas Photo"
-        className="object-cover w-full h-full"
-        draggable={false}
-      />
-    </div>
-    {/* Content shifts left to accommodate the avatar on right */}
-    <div className="flex-1 flex flex-col gap-4 items-start md:mr-[19rem]">
+    {/* Removed image at top */}
+    <div className="flex-1 flex flex-col gap-4 items-start">
       <p className="text-lg md:text-xl text-secondary font-heading font-semibold tracking-wide px-2">
         Hi, I'm
       </p>
